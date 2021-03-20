@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: black;
+  padding: 0px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fa1ee4;
+}
+
+.btn.active {
+  background-color: blue;
+  color: white;
+}
+
+.center {
+  text-align: center;
+  color: white;
+}
+
+.buybutton {
+  background-color: blue; 
+  color: white;
+  border-radius: 18px;
+  font-size: 15px;
+  width: 100%;
+  margin: 2px 0px;
+  height: 40px;  
+  border: 2px solid #4CAF50;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1><font color=white><div class="center"><link rel="stylesheet" type="text/css" href="dark.css">TURTLENETWORK NFT</div></font></h1>
+<font color=white><div class="center"><h3>You can download the NFT Art but you still can't steal the Artist rights because blockchain secures it.</font></h3></div>
+<hr>
+<h2><font color=white>Filter NFT by Artist Catergory</font></h2>
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('LuisenRE')"> LuisenRE</button>
+  <button class="btn" onclick="filterSelection('Deyo')"> Deyo</button>
+  <button class="btn" onclick="filterSelection('people')"> ThirdArtist</button>
+</div>
+
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_19-50-15.mp4" type="video/mp4" alt="doc_2021-03-20_19-50-15" style="width:100%"></video>
+    <h4><div class="center">Polarity Boards on Streets</div></h4>
+	<h4><div class="center">Intrenstic Value: 10$</div></h4>	
+	<button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">
+	Buy
+	</button>
+	</div>
+  </div>
+   
+  <div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_19-50-51.mp4" type="video/mp4" alt="doc_2021-03-20_19-50-51" style="width:100%"></video>
+      <h4><div class="center">Innovation Through Collaboration</div></h4>
+ 	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+  <div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_19-51-00.mp4" type="video/mp4" alt="doc_2021-03-20_19-51-00" style="width:100%"></video>
+      <h4><div class="center">ETHER-1</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+  <div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-11-50.mp4" type="video/mp4" alt="doc_2021-03-20_23-11-50" style="width:100%"></video>
+      <h4><div class="center">Church Gateway of Polarity</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+ <div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-02.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-02" style="width:100%"></video>
+      <h4><div class="center">Polarity Gateway</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-12.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-12" style="width:100%"></video>
+      <h4><div class="center"> Sentinel Flip</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>  
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-58.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-58" style="width:100%"></video>
+      <h4><div class="center">Bull Run on Polarity </div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>  
+  
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-37.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-37" style="width:100%"></video>
+      <h4><div class="center">Uniswap on Polarity</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-13-07.mp4" type="video/mp4" alt="doc_2021-03-20_23-13-07" style="width:100%"></video>
+      <h4><div class="center">Wishdom Hall of Polarity</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-13-22.mp4" type="video/mp4" alt="doc_2021-03-20_23-13-22" style="width:100%"></video>
+      <h4><div class="center">Antecedente</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-47.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-47" style="width:100%"></video>
+      <h4><div class="center">Polarity Ticket</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div> 
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-20.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-20" style="width:100%"></video>
+      <h4><div class="center">Doge Gateway on Polarity</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-12-29.mp4" type="video/mp4" alt="doc_2021-03-20_23-12-29" style="width:100%"></video>
+      <h4><div class="center">Time The Giant</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-17-16.mp4" type="video/mp4" alt="doc_2021-03-20_23-17-16" style="width:100%"></video>
+      <h4><div class="center">Dark Theme Of Polarity</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div> 
+
+<div class="column LuisenRE">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./LuisenRE/doc_2021-03-20_23-17-29.mp4" type="video/mp4" alt="doc_2021-03-20_23-17-29" style="width:100%"></video>
+      <h4><div class="center">Global World of TurtleNetwork</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>   
+  
+  
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_1001.mp4" type="video/mp4" alt="IMG_1001" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2057.mov" type="video/mp4" alt="IMG_2057" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+  
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2130.mov" type="video/mp4" alt="IMG_2130" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2133.mov" type="video/mp4" alt="IMG_2133" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2157.mov" type="video/mp4" alt="IMG_2157" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2167.mov" type="video/mp4" alt="IMG_2167" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2198.mov" type="video/mp4" alt="IMG_2198" style="width:100%"></video>
+      <h4><div class="center">Polarity Awakens</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2295.mov" type="video/mp4" alt="IMG_2295" style="width:100%"></video>
+      <h4><div class="center">Transparent Polarity Like Water</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_2296.mov" type="video/mp4" alt="IMG_2296" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_3032.mov" type="video/mp4" alt="IMG_3032" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+  
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_4761.mov" type="video/mp4" alt="IMG_4761" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_4771.mov" type="video/mp4" alt="IMG_4771" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_4776.mov" type="video/mp4" alt="IMG_4776" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_4785.mov" type="video/mp4" alt="IMG_4785" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_5135.mp4" type="video/mp4" alt="IMG_5135" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_5661.mp4" type="video/mp4" alt="IMG_5661" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_8755.mp4" type="video/mp4" alt="IMG_8755" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_9382.mp4" type="video/mp4" alt="IMG_9382" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>
+
+<div class="column Deyo">
+    <div class="content">
+	<video width="320" height="240" controls>
+    <source src="./Deyo/IMG_9592.mp4" type="video/mp4" alt="IMG_9592" style="width:100%"></video>
+      <h4><div class="center">Polarity Party and Celebration</div></h4>
+	  <h4><div class="center">Art Intrenstic Value: 10$</div></h4>
+	  <button class="buybutton" onclick="window.location.href='https://polarity.exchange/dapps'">Buy</a></button>
+    </div>
+  </div>  
+  
+  
+  
+  <div class="column ThirdArtist">
+    <div class="content">
+    <img src="/w3images/Artist.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column ThirdArtist">
+    <div class="content">
+    <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
